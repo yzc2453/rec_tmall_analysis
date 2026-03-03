@@ -1,0 +1,48 @@
+# ===================== Python 相关 =====================
+# 虚拟环境（Conda/venv）
+venv/
+env/
+.venv/
+.env/
+# Python 编译缓存
+__pycache__/
+*.py[cod]
+*$py.class
+# Python 运行时缓存
+.pytest_cache/
+.coverage
+htmlcov/
+# 分布式版本
+*.egg-info/
+.installed.cfg
+*.egg
+
+# ===================== 数据相关 =====================
+# 原始数据（体积大，不上传）
+data/raw/
+# 数据库文件（SQLite）
+*.db
+*.sqlite
+*.db-journal
+# 日志文件
+*.log
+# 输出文件（质量报告、临时CSV等）
+data/output/
+*.csv
+*.xlsx
+*.json
+
+# ===================== 系统/IDE 相关 =====================
+# Windows 系统文件
+Thumbs.db
+Desktop.ini
+# macOS 系统文件
+.DS_Store
+# IDE 配置文件（VSCode/PyCharm）
+.vscode/
+.idea/
+*.swp
+*.swo
+# 临时文件
+*.tmp
+*.bak

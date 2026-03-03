@@ -1,0 +1,31 @@
+# 路径配置
+path:
+  # 原始数据路径
+  raw_data:
+    user_behavior: "D:/Project/rec_tmall_bigdata/data/raw/a_logs_1gb.csv"
+    product_detail: "D:/Project/rec_tmall_bigdata/data/raw/a_product_detail.csv"
+    review: "D:/Project/rec_tmall_bigdata/data/raw/a_review.csv"
+  # 清洗后数据路径
+  cleaned_data: "D:/Project/rec_tmall_bigdata/data/cleaned/"
+  # 输出/报告路径
+  output_data: "D:/Project/rec_tmall_bigdata/data/output/"
+  # 数据库路径
+  db_path: "D:/Project/rec_tmall_bigdata/data/cleaned/ecommerce.db"
+  # 数据质量报告路径
+  quality_report: "D:/Project/rec_tmall_bigdata/data/output/quality_report.csv"
+
+# ETL配置
+etl:
+  # 是否增量抽取（默认全量）
+  incremental: False
+  # 增量起始日期（格式：YYYY-MM-DD）
+  start_date: "2023-01-01"
+  # 分块读取大小（处理大文件）
+  chunk_size: 100000
+
+# 可视化配置
+visual:
+  # 图表字体
+  font: "Microsoft YaHei"
+  # 图表DPI
+  dpi: 100
